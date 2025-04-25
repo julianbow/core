@@ -16,7 +16,11 @@
     "-e",
     "GIT_EDITOR=code --wait",
     "--security-opt",
-    "label=disable"
+    "label=disable",
+    "--network=host"
+  ],
+  "mounts": [
+    "source=${localEnv:HOME}/Desktop/HomeAssistant/test/HAIntegrationExamples,target=${containerWorkspaceFolder}/share/development,type=bind"
   ],
   "customizations": {
     "vscode": {

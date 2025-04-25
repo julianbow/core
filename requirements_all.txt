@@ -2557,6 +2557,7 @@ pyvolumio==0.1.5
 # homeassistant.components.waze_travel_time
 pywaze==1.0.2
 
+# homeassistant.components.tempest
 # homeassistant.components.weatherflow
 pyweatherflowudp==1.4.5
 
@@ -3057,6 +3058,7 @@ waterfurnace==1.1.0
 # homeassistant.components.watergate
 watergate-local-api==2024.4.1
 
+# homeassistant.components.tempest
 # homeassistant.components.weatherflow_cloud
 weatherflow4py==1.3.1
 

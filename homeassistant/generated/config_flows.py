@@ -628,6 +628,7 @@ FLOWS = {
         "technove",
         "tedee",
         "tellduslive",
+        "tempest",
         "tesla_fleet",
         "tesla_wall_connector",
         "teslemetry",

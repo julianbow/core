@@ -6540,6 +6540,12 @@
       "config_flow": false,
       "iot_class": "local_polling"
     },
+    "tempest": {
+      "name": "tempest",
+      "integration_type": "hub",
+      "config_flow": true,
+      "iot_class": "cloud_polling"
+    },
     "tensorflow": {
       "name": "TensorFlow",
       "integration_type": "hub",
