@@ -10,9 +10,9 @@ DOMAIN = "tempest"
 AUTHORIZE_URL = "https://smartweather.weatherflow.com/authorize.html"
 TOKEN_URL = "https://swd.weatherflow.com/id/oauth2/token"
 
-CLIENT_ID = "9a14f12b-15f6-4843-b7b4-07e5418a3888"
+CLIENT_ID = "1f59ad93-2c35-40b1-b984-ace096dbe624"
 
-MANUFACTURER = "WeatherFlow"
+MANUFACTURER = "Tempest"
 
 DATA_SOURCE = "data_source"
 
@@ -28,9 +28,9 @@ def format_dispatch_call(config_entry: ConfigEntry) -> str:
 
 ERROR_MSG_ADDRESS_IN_USE = "address_in_use"
 ERROR_MSG_CANNOT_CONNECT = "cannot_connect"
-ERROR_MSG_NO_DEVICE_FOUND = "no_device_found"
+ERROR_MSG_NO_DEVICE_FOUND = "no_devices_found"
 
-ATTR_ATTRIBUTION = "Weather data delivered by WeatherFlow/Tempest REST Api"
+ATTR_ATTRIBUTION = "Weather data delivered by Tempest REST Api"
 
 STATE_MAP = {
     "clear-day": "sunny",

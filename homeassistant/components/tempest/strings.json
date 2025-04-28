@@ -17,17 +17,17 @@
       "invalid_api_key": "Invalid API key"
     },
     "step": {
-      "reauth_confirm": {
-        "data": {
-          "api_token": "Personal API token"
-        },
-        "description": "Reauthenticate with Tempest"
-      },
       "user": {
+        "title": "",
+        "description": "Set up a Tempest Forecast Station",
         "data": {
-          "api_token": "Personal API token"
+          "data_source": "Local or Cloud",
+          "api_token": "Personal API token",
+          "host": "[%key:common::config_flow::data::host%]"
         },
-        "description": "Set up a Tempest Station"
+        "data_description": {
+          "data_source": "Choose whether to connect locally (UDP) or via the cloud"
+        }
       }
     }
   },
