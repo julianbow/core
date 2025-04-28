@@ -1,6 +1,6 @@
 {
   "domain": "tempest",
-  "name": "tempest",
+  "name": "Tempest",
   "codeowners": ["@julianbow"],
   "config_flow": true,
   "dependencies": ["auth"],

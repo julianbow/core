@@ -1,34 +1,34 @@
 {
   "config": {
-    "step": {
-      "user": {
-        "description": "Set up a Tempest Station",
-        "data": {
-          "api_token": "Personal API token"
-        }
-      },
-      "reauth_confirm": {
-        "description": "Reauthenticate with Tempest",
-        "data": {
-          "api_token": "[%key:component::weatherflow_cloud::config::step::user::data::api_token%]"
-        }
-      }
+    "abort": {
+      "already_configured": "Account is already configured",
+      "already_in_progress": "Configuration flow is already in progress",
+      "authorize_url_timeout": "Timeout generating authorize URL.",
+      "missing_configuration": "The component is not configured. Please follow the documentation.",
+      "no_url_available": "No URL available. For information about this error, [check the help section]({docs_url})",
+      "oauth_error": "Received invalid token data.",
+      "oauth_failed": "Error while obtaining access token.",
+      "oauth_timeout": "Timeout resolving OAuth token.",
+      "oauth_unauthorized": "OAuth authorization error while obtaining access token.",
+      "user_rejected_authorize": "Account linking rejected: {error}"
     },
     "error": {
-      "cannot_connect": "[%key:common::config_flow::error::cannot_connect%]",
-      "invalid_api_key": "[%key:common::config_flow::error::invalid_api_key%]"
+      "cannot_connect": "Failed to connect",
+      "invalid_api_key": "Invalid API key"
     },
-    "abort": {
-      "already_configured": "[%key:common::config_flow::abort::already_configured_account%]",
-      "already_in_progress": "[%key:common::config_flow::abort::already_in_progress%]",
-      "oauth_error": "[%key:common::config_flow::abort::oauth2_error%]",
-      "oauth_failed": "[%key:common::config_flow::abort::oauth2_failed%]",
-      "oauth_timeout": "[%key:common::config_flow::abort::oauth2_timeout%]",
-      "oauth_unauthorized": "[%key:common::config_flow::abort::oauth2_unauthorized%]",
-      "missing_configuration": "[%key:common::config_flow::abort::oauth2_missing_configuration%]",
-      "authorize_url_timeout": "[%key:common::config_flow::abort::oauth2_authorize_url_timeout%]",
-      "no_url_available": "[%key:common::config_flow::abort::oauth2_no_url_available%]",
-      "user_rejected_authorize": "[%key:common::config_flow::abort::oauth2_user_rejected_authorize%]"
+    "step": {
+      "reauth_confirm": {
+        "data": {
+          "api_token": "Personal API token"
+        },
+        "description": "Reauthenticate with Tempest"
+      },
+      "user": {
+        "data": {
+          "api_token": "Personal API token"
+        },
+        "description": "Set up a Tempest Station"
+      }
     }
   },
   "entity": {
@@ -39,17 +39,23 @@
       "air_temperature": {
         "name": "Air temperature"
       },
-      "battery": {
-        "name": "Battery voltage"
-      },
       "barometric_pressure": {
         "name": "Pressure barometric"
       },
-      "sea_level_pressure": {
-        "name": "Pressure sea level"
+      "battery": {
+        "name": "Battery voltage"
       },
       "dew_point_temperature": {
         "name": "Dew point"
+      },
+      "feels_like_temperature": {
+        "name": "Feels like"
+      },
+      "heat_index": {
+        "name": "Heat index"
+      },
+      "illuminance": {
+        "name": "Illuminance"
       },
       "lightning_strike_count": {
         "name": "Lightning count"
@@ -66,6 +72,15 @@
       "lightning_strike_last_epoch": {
         "name": "Lightning last strike"
       },
+      "sea_level_pressure": {
+        "name": "Pressure sea level"
+      },
+      "wet_bulb_globe_temperature": {
+        "name": "Wet bulb globe temperature"
+      },
+      "wet_bulb_temperature": {
+        "name": "Wet bulb temperature"
+      },
       "wind_chill": {
         "name": "Wind chill"
       },
@@ -80,21 +95,6 @@
       },
       "wind_lull": {
         "name": "Wind lull"
-      },
-      "feels_like_temperature": {
-        "name": "Feels like"
-      },
-      "heat_index": {
-        "name": "Heat index"
-      },
-      "wet_bulb_temperature": {
-        "name": "Wet bulb temperature"
-      },
-      "wet_bulb_globe_temperature": {
-        "name": "Wet bulb globe temperature"
-      },
-      "illuminance": {
-        "name": "Illuminance"
       }
     }
   }
