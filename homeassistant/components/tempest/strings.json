@@ -39,16 +39,19 @@
       "air_temperature": {
         "name": "Air temperature"
       },
-      "barometric_pressure": {
-        "name": "Pressure barometric"
-      },
       "battery": {
         "name": "Battery voltage"
       },
-      "dew_point_temperature": {
+      "brightness": {
+        "name": "Brightness"
+      },
+      "delta_t": {
+        "name": "Delta T"
+      },
+      "dew_point": {
         "name": "Dew point"
       },
-      "feels_like_temperature": {
+      "feels_like": {
         "name": "Feels like"
       },
       "heat_index": {
@@ -58,22 +61,28 @@
         "name": "Illuminance"
       },
       "lightning_strike_count": {
-        "name": "Lightning count"
+        "name": "Lightning Strike Count"
       },
       "lightning_strike_count_last_1hr": {
         "name": "Lightning count last 1 hr"
       },
       "lightning_strike_count_last_3hr": {
-        "name": "Lightning count last 3 hr"
+        "name": "Lightning Detected Last 3 hrs"
       },
       "lightning_strike_last_distance": {
-        "name": "Lightning last distance"
+        "name": "Lightning Distance Detected"
       },
       "lightning_strike_last_epoch": {
-        "name": "Lightning last strike"
+        "name": "Lightning Last Detected"
+      },
+      "relative_humidity": {
+        "name": "Relative humidity"
       },
       "sea_level_pressure": {
-        "name": "Pressure sea level"
+        "name": "Sea Level Pressure"
+      },
+      "station_pressure": {
+        "name": "Station Pressure"
       },
       "wet_bulb_globe_temperature": {
         "name": "Wet bulb globe temperature"
