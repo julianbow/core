@@ -75,6 +75,24 @@
       "lightning_strike_last_epoch": {
         "name": "Lightning Last Detected"
       },
+      "precip": {
+        "name": "Rain Intensity"
+      },
+      "precip_accum_local_day_final": {
+        "name": "Rain Accumulation (Today)"
+      },
+      "precip_accum_local_yesterday_final": {
+        "name": "Rain Accumulation (Yesterday)"
+      },
+      "precip_minutes_local_day": {
+        "name": "Rain Duration (Today)"
+      },
+      "precip_minutes_local_yesterday": {
+        "name": "Rain Duration (Yesterday)"
+      },
+      "pressure_trend": {
+        "name": "Pressure Trend"
+      },
       "relative_humidity": {
         "name": "Relative humidity"
       },
@@ -84,17 +102,29 @@
       "station_pressure": {
         "name": "Station Pressure"
       },
+      "solar_radiation": {
+        "name": "Solar Radiation"
+      },
+      "timestamp": {
+        "name": "Timestamp"
+      },
+      "uv": {
+        "name": "UV Index"
+      },
       "wet_bulb_globe_temperature": {
-        "name": "Wet bulb globe temperature"
+        "name": "Wet bulb Globe Temperature"
       },
       "wet_bulb_temperature": {
-        "name": "Wet bulb temperature"
+        "name": "Wet bulb Temperature"
+      },
+      "wind_avg": {
+        "name": "Wind Speed"
       },
       "wind_chill": {
-        "name": "Wind chill"
+        "name": "Wind Chill"
       },
       "wind_direction": {
-        "name": "Wind direction"
+        "name": "Wind Direction"
       },
       "wind_direction_cardinal": {
         "name": "Wind direction (cardinal)"
