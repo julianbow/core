@@ -89,6 +89,7 @@ SENSORS: tuple[WeatherFlowSensorEntityDescription, ...] = (
     ),
     WeatherFlowSensorEntityDescription(
         key="air_temperature",
+        translation_key="air_temperature",
         native_unit_of_measurement=UnitOfTemperature.CELSIUS,
         device_class=SensorDeviceClass.TEMPERATURE,
         state_class=SensorStateClass.MEASUREMENT,
@@ -133,6 +134,7 @@ SENSORS: tuple[WeatherFlowSensorEntityDescription, ...] = (
     ),
     WeatherFlowSensorEntityDescription(
         key="illuminance",
+        translation_key="illuminance",
         native_unit_of_measurement=LIGHT_LUX,
         device_class=SensorDeviceClass.ILLUMINANCE,
         state_class=SensorStateClass.MEASUREMENT,
@@ -177,6 +179,7 @@ SENSORS: tuple[WeatherFlowSensorEntityDescription, ...] = (
     ),
     WeatherFlowSensorEntityDescription(
         key="relative_humidity",
+        translation_key="relative_humidity",
         native_unit_of_measurement=PERCENTAGE,
         device_class=SensorDeviceClass.HUMIDITY,
         state_class=SensorStateClass.MEASUREMENT,
@@ -204,6 +207,7 @@ SENSORS: tuple[WeatherFlowSensorEntityDescription, ...] = (
     ),
     WeatherFlowSensorEntityDescription(
         key="solar_radiation",
+        translation_key="solar_radiation",
         native_unit_of_measurement=UnitOfIrradiance.WATTS_PER_SQUARE_METER,
         device_class=SensorDeviceClass.IRRADIANCE,
         state_class=SensorStateClass.MEASUREMENT,
@@ -221,7 +225,7 @@ SENSORS: tuple[WeatherFlowSensorEntityDescription, ...] = (
     ),
     WeatherFlowSensorEntityDescription(
         key="uv",
-        translation_key="uv_index",
+        translation_key="uv",
         native_unit_of_measurement=UV_INDEX,
         state_class=SensorStateClass.MEASUREMENT,
         raw_data_conv_fn=lambda d: d,
@@ -562,7 +566,7 @@ async def async_setup_entry(
         # Local mode
         @callback
         def async_add_sensor(device: WeatherFlowDevice) -> None:
-            _LOGGER.debug("Adding local sensors for %s", device)
+            _LOGGER.info("Adding local sensors for %s", device)
             entities = [
                 WeatherFlowSensorEntity(
                     device=device,
